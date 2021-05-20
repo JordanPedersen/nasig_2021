@@ -1,0 +1,2607 @@
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%United Arab Emirates%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'United Arab Emirates'
+WHERE (geoname LIKE '%United Arab Emirates%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Afghanistan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Afghanistan'
+WHERE (geoname LIKE '%Afghanistan%'
+AND geoname NOT LIKE '% and %');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Antigu%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Antigua and Barbuda'
+WHERE (geoname IN ("English Harbour (Antigua)",
+"St. John's (Antigua)","Antigua","Betty's Hope (Antigua and Barbuda)",
+"Indian Creek site, Antigua.","Jolly Beach Site (Antigua)","Redonda (Antigua and Barbuda)"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Antarctica%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Antarctica'
+WHERE (geoname LIKE '%Antarctic%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Austria%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Austria'
+WHERE (geoname LIKE '%Austria%'
+AND geoname NOT LIKE '% and %'
+AND geoname NOT LIKE '%Austrian%');
+
+UPDATE sixfiveone
+SET country = 'Austria'
+WHERE geoname = 'Alps, Austrian (Austria)';
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Australia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Australia'
+WHERE (geoname LIKE '%Australia%' and 
+geoname NOT LIKE '%Australian%' and
+(geoname NOT IN ("Cuates de Australia (Mexico)",
+"National Council of Women of Victoria, Australia")));
+
+UPDATE sixfiveone
+SET country = 'Australia'
+WHERE geoname IN ("Australian Alps (N.S.W. and Vic.)",
+"Australian Capital Territory","Great Australian Bight district (Australia)");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Bosn%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Bosnia and Herzegovina'
+WHERE (geoname LIKE '%Bosnia%'
+AND geoname NOT LIKE '%Croatia%'
+AND geoname NOT LIKE '%Serbia%'
+AND geoname NOT IN ('Sutjeska River, Bosnia and Herzegovina, Battle of the, 1943'));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Barbados%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Barbados'
+WHERE (geoname LIKE '%Barbados%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Bangladesh%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Bangladesh'
+WHERE (geoname LIKE '%Bangladesh%'
+AND geoname NOT LIKE '% and %');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Belgium%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Belgium'
+WHERE (geoname LIKE '%Belgium%' AND 
+(geoname NOT IN ("Belgium--Foreign relations--1951-")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Burkina%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Burkina Faso'
+WHERE (geoname LIKE '%Burkina Faso%' 
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Bulgaria%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Bulgaria'
+WHERE (geoname LIKE '%Bulgaria%' and 
+(geoname NOT IN ("Bulgarians","Bulgarian poetry")
+and geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Benin%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Benin'
+WHERE (geoname LIKE '%Benin%' and 
+(geoname NOT LIKE "%Nigeria%"
+AND geoname NOT LIKE "%Bight of%"
+AND geoname NOT LIKE "%Gulf of%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Bermuda%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Bermuda'
+WHERE (geoname LIKE '%Bermuda%' and 
+(geoname NOT IN ("Bermuda Hundred Region (Va.)")
+AND geoname not like "%Bermuda Triangle%" ));
+
+UPDATE sixfiveone
+SET country = 'Bermuda.'
+WHERE (geoname LIKE '%Bermuda Islands.%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Bolivia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Bolivia'
+WHERE (geoname LIKE '%Bolivia%' 
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Peru-Bolivian Confederation%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Braz%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Brazil'
+WHERE (geoname LIKE '%Brazi%' and
+(geoname NOT LIKE "%Congo%" AND
+geoname NOT LIKE "% and %" AND
+geoname NOT LIKE "%(Tex.)%" AND
+geoname NOT IN ("Amazonas (Brazil) in literature","Brazil - Politics and government.","Brazil - Politics and government",
+"Pará (Brazil : State) in literature")));
+
+UPDATE sixfiveone
+SET country = 'Brazil'
+WHERE (geoname LIKE '%Minas Gerais and Espírito Santo, Brazil%'
+or geoname LIKE "%Amapá and Pará, Brazil%"
+or geoname like "%Bahia and Minas Gerais, Brazil%"
+or geoname like "%Minas Gerais-Alagoas and Sergipe, Brazil%"
+or geoname = "Rio Negro (Amazonas, Brazl)");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Botswana%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Botswana'
+WHERE (geoname LIKE '%Botswana%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Belar%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Belarus'
+WHERE (geoname LIKE '%Belarus%' and 
+(geoname NOT IN ("German occupation of Belarus (1941-1944)",
+"Polatsk (Belarus) in literature")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Beli%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Belize'
+WHERE (geoname LIKE '%Belize%' and (geoname NOT IN ("Belize / History.")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Canad%'
+ORDER BY geoname;
+
+SELECT * FROM sixfiveone WHERE geoname = 'Canada';
+
+UPDATE sixfiveone
+SET country = 'Canada'
+WHERE (geoname LIKE '%Canada%' and (geoname NOT IN 
+('Bas-Canada',"Canada First movement","Canada Labour Relations Board",
+"Canada Land Inventory","Canada Permanent and Western Canada Mortgage Corporation.","Canada Post","Canada [The Fruit Marks Act, 1901]",
+"Canada Statistics","Canada's national-provincial health program for the 1980's","Canada-United States Automotive Trade Agreement",
+"Canada. Health of Animals Branch.","Home Buyers' Plan (Canada)","Voting Canada")
+AND geoname NOT LIKE "%Council%"
+and geoname NOT LIKE "Canada francophone%"
+and geoname NOT LIKE "Canada in literature%"
+and geoname NOT LIKE "Lower Canada%"
+and geoname NOT LIKE "Upper Canada%"
+and geoname NOT LIKE "% and Canada%"
+and geoname NOT LIKE "% et Canada"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Central African%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Central African Republic'
+WHERE (geoname LIKE '%Central African%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Switzerland%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Switzerland'
+WHERE (geoname LIKE '%Switzerland%' and 
+(geoname NOT IN ("Switzerland County (Ind.)","Switzerland $x Politics and government $y 1848-")
+AND geoname NOT LIKE "% and %"));
+
+UPDATE sixfiveone
+SET country = 'Switzerland'
+WHERE (geoname LIKE "%Airolo and Göschenen, Switzerland%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE "%Côte d'I%"
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = "Côte d'Ivoire"
+WHERE (geoname LIKE "%Côte d'I%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Cook%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Cook Islands'
+WHERE (geoname LIKE '%Cook Islands%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Chile%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Chile'
+WHERE (geoname LIKE '%Chile%' and 
+(geoname NOT LIKE "% and %"
+AND geoname NOT IN ("Chilex","Maule (Chile : Region) in literature","Valparaiso (Chile) in art")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Camer%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Cameroon'
+WHERE (geoname LIKE '%Cameroon%' and 
+(geoname NOT IN ("Cameroons","Cameroons, British","Cameroons,British",
+"French Cameroons","French Cameroons.","Southern Cameroons")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Colombia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Colombia'
+WHERE (geoname LIKE '%Colombia%' 
+and (geoname NOT LIKE ("% and %"
+AND geoname NOT LIKE "%(Venezuela and Colombia)%"
+AND geoname NOT LIKE "%Mexico%")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Costa%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Costa Rica'
+WHERE (geoname LIKE '%Costa Rica%'
+AND geoname NOT LIKE "% and %");
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Cub%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Cuba'
+WHERE (geoname LIKE '%Cuba%'and (geoname NOT IN ("Cuba (N.Y.)",
+"Cuba (Portugal)","Cuba - Statistics - Periodicals","Cuba City (Wis.)",
+"Cubagua Island (Venezuela)","Cubans","Introduction -- Cuban Prologue -- Conquering the Philippines -- Cold War Prelude -- The Vietnam Dece")
+AND geoname NOT LIKE "%Mexico%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Cyprus%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Cyprus'
+WHERE (geoname LIKE '%Cyprus%'and (geoname NOT IN ("Salamis (Cyprus : Extinct city)")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Denm%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Denmark'
+WHERE (geoname LIKE '%Denmark%'
+and (geoname NOT IN ("Denmark (Iowa)","Denmark (S.C.)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Germany%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Dominican Republic%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Dominican Republic'
+WHERE (geoname LIKE '%Dominican Republic%');
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Alger%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Alger'
+WHERE (geoname LIKE '%Algeria%'and (geoname NOT IN ("Alger County (Mich.)",
+"Algerians","Grand Island (Alger County, Mich.)"
+AND geoname NOT LIKE "% and %")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Ecuad%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Ecuador'
+WHERE (geoname LIKE '%Ecuador%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Egypt%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Egypt'
+WHERE (geoname LIKE '%Egypt%'and (geoname NOT IN 
+("Egypt Social conditions.",
+"Egypt in art.","Egypt in motion pictures.","Egyptian language","Suez Canal (Egypt), in literature",
+"Egyptian literature","Egyptian wit and humor, pictorial","Egyptians",
+"Fir.ka, Egyptian Sudan.""Jebel Moya, Egyptian Sudan","New Egypt (N.J.)",
+"Mural painting and decoration, Egyptian","Muslimska brödraskapet (Egypten)")
+AND geoname NOT LIKE "%Extinct city%"
+AND geoname NOT LIKE "%Ancient city%"
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Ethiopia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Ethiopia'
+WHERE (geoname LIKE '%Ethiopia%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Finlan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Finland'
+WHERE (geoname LIKE '%Finland%'and (geoname NOT IN ("Finland, Gulf of","New Finland (Sask.)")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Fiji%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Fiji'
+WHERE (geoname LIKE '%Fiji%'and (geoname NOT IN ("Fijij (Morocco)",
+"Rufiji River Valley (Tanzania)","Rufiji District (Tanzania)")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Micrones%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Micronesia'
+WHERE (geoname LIKE '%Micronesia%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%France%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'France'
+WHERE (geoname LIKE '%(France)%');
+
+UPDATE sixfiveone
+SET country = 'France'
+WHERE (geoname LIKE '%France%' and (geoname NOT IN ("$aFrance$xHistoire$y18e siècle$vRomans, nouvelles, etc.  http://ottawa.bibliocommons.com/item/show/6","Africa Ecuatorial Francesa","Africa Occidental Francesa","Dunkerque (France), Battle of, 1940.","Dunkerque (France), Battle of, 1940","Fort Frances (Ont. : District).","Fort Frances (Ont. : District)","Fort Frances (Ont.)","France [Lois, etc.]","France [Laws, etc.]","France politics and government",
+"France--Histoire--1789-1799 (Révolution)--Causes.","Francestown, N.H.","Franceschi, Pietro di Benedetto dei, 1416?-1492","Francesca, Piero della, 1416?-1492",'Piazza San Francesco (Assisi, Italy).')
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%England%"
+AND geoname NOT LIKE "%New France%"
+AND geoname NOT LIKE "%Belgium%"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%in literature%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Gabon%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Gabon'
+WHERE (geoname LIKE '%Gabon%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Guiana%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'French Guiana'
+WHERE (geoname LIKE '%French Guiana%'OR 
+geoname LIKE "Guiana, French%"
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Guernsey%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Guernsey'
+WHERE (geoname LIKE '%Guernsey%'and (geoname NOT IN ("Guernsey Region (Sask.)")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Ghana%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Ghana'
+WHERE (geoname LIKE '%Ghana%'and (geoname NOT IN ("Ghanapur (India)","Ghanaian poetry (English)","Khibert Siyar el-Ghanam (Jordan)")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Greenland%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Greenland'
+WHERE (geoname LIKE '%Greenland%' and (geoname NOT IN ("Greenland (N.H.)","Greenland Sea.","Greenland Sea")
+AND geoname NOT LIKE "% and %"));
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Guadeloupe%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Guadeloupe'
+WHERE (geoname LIKE '%Guadeloupe%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Greece%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Greece'
+WHERE (geoname LIKE '%Greece%'and (geoname NOT IN ("Thessaly (Greece) in fiction, drama, poetry, etc.")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Extinct city%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Hong Kong%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Hong Kong'
+WHERE (geoname LIKE '%Hong Kong%'and (geoname NOT IN ('Tokyo, Japan--Foreign relations--Hong Kong, China.')));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Guatemala%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Guatemala'
+WHERE (geoname LIKE '%Guatemala%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Guam%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Guam'
+WHERE (geoname LIKE '%Guam%'
+AND geoname NOT LIKE "%Stillaguamish River%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Guinea-Bissau%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Guinea-Bissau'
+WHERE (geoname LIKE '%Guinea-Bissau%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Guyana%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Guyana'
+WHERE (geoname LIKE '%Guyana%'and (geoname NOT IN ("Guyana Shield.","Guyana Shield")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Gaza Strip%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Gaza Strip'
+WHERE (geoname LIKE '%Gaza Strip%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Heard%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Heard Island and McDonald Islands'
+WHERE (geoname LIKE '%Heard Island%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Honduras%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Honduras'
+WHERE (geoname LIKE '%Honduras%'and (geoname NOT IN ("British Honduras")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Sandwich Island%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'South Georgia and the South Sandwich Islands'
+WHERE (geoname LIKE '%Sandwich Island%'
+OR geoname LIKE '%South Georgia%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Haiti%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Haiti'
+WHERE (geoname LIKE '%Haiti%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Hungary%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Hungary'
+WHERE (geoname LIKE '%Hungary%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Indonesia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Indonesia'
+WHERE (geoname LIKE '%Indonesia%'and (geoname NOT IN ("Indonesia--History--Revolution, 1945-1949--Personal narratives, Dutch.","Indonesia--Politics and government--1950-1966.")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Ireland%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Ireland'
+WHERE (geoname LIKE '%Ireland%'and (geoname NOT IN ("Firelands (Ohio)",
+"Ireland / Politics and government / 1172-1603.")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Northern Ireland%"
+AND geoname NOT LIKE "%in literature%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Israel%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Israel'
+WHERE (geoname LIKE '%Israel%'and (geoname NOT IN ("Arab-Israeli conflict.","Arab-Israeli conflict","Disraeli (Québec)","Israel (Christian theology)","Israel and the diaspora.")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Extinct city%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%Israel-Arab War%"
+AND geoname NOT LIKE "%Israel-Arab conflict%"
+AND geoname NOT LIKE "%Palestine%"
+AND geoname NOT LIKE "%Israeli%"
+AND geoname NOT LIKE "%Israeli occupation%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Isle of Man%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Isle of Man'
+WHERE (geoname LIKE '%Isle of Man%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%British Indian Ocean Territory%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'British Indian Ocean Territory'
+WHERE (geoname LIKE '%British Indian Ocean Territory%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%India%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'India'
+WHERE (geoname LIKE '%(India)%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%India%'
+AND geoname NOT LIKE "%INDIAN%"
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'India'
+WHERE (geoname LIKE '%India%'and (geoname NOT IN ("Christmas Island (Indian Ocean).",
+"French India","French India.","Free India.","India--Description and travel.",
+"Sindia (Italy)","Zuid-India.")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%indian%"
+AND geoname NOT LIKE "%Pakistan%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Iraq%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Iraq'
+WHERE (geoname LIKE '%Iraq%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%war%"
+AND geoname NOT LIKE "%relations%"
+AND geoname NOT LIKE "%crisis%"
+AND geoname NOT LIKE "%iraqi%"
+AND geoname NOT LIKE "%battle of%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Iran%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Iran'
+WHERE (geoname LIKE '%Iran%'and (geoname NOT IN ("Antsiran̈ana (Madagascar)",
+"Chiran-chō (Japan)","Chirand Site (India)",
+"Iran History","Kaziranga National Park (India)","Kirango (Mali)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%/%"
+AND geoname NOT LIKE "%battle%"
+AND geoname NOT LIKE "%miranda%"
+AND geoname NOT LIKE "%italy%"
+AND geoname NOT LIKE "%tiran%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Iceland%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Iceland'
+WHERE (geoname LIKE '%Iceland%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Italy%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Italy'
+WHERE (geoname LIKE '%(Italy)%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Italy%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Italy'
+WHERE (geoname LIKE '%Italy%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Little Italy%"
+AND geoname NOT LIKE "%Extinct%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Samoa%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Samoa'
+WHERE (geoname LIKE '%Samoa%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%American samoa%"
+AND geoname NOT LIKE "%samoan islands%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Wallis%'
+OR geoname LIKE '%FUTUNA%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Wallis and Futuna'
+WHERE (geoname LIKE '%Wallis and Futuna%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Kosovo%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Kosovo'
+WHERE (geoname LIKE '%Kosovo%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Serbia%"
+AND geoname NOT LIKE "%Yugoslavia%"
+AND geoname NOT LIKE "%war%"
+AND geoname NOT LIKE "%in literature%");
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Yemen%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Yemen'
+WHERE (geoname LIKE '%Yemen%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%South%"
+AND geoname NOT LIKE "%democratic%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%South Africa%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'South Africa'
+WHERE (geoname LIKE '%South Africa%'and (geoname NOT IN ("South Africa High Commission Territories","South African")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%BATTLE%"
+AND geoname NOT LIKE "%war%"
+AND geoname NOT LIKE "%literature%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Zambia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Zambia'
+WHERE (geoname LIKE '%Zambia%'and (geoname NOT IN ('Lusaka (Zambian and Congolese (Democratic Republic) people)')
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Zimbabwe%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Zimbabwe'
+WHERE (geoname LIKE '%Zimbabwe%'and (geoname NOT IN ("Zimbabwe, Southern Rhodesia")
+AND geoname NOT LIKE "% and %"))
+AND geoname NOT LIKE "%extinct%";
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Vatican%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Vatican City'
+WHERE (geoname LIKE '%Vatican%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Venezuela%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Venezuela'
+WHERE (geoname LIKE '%Venezuela%'
+AND geoname NOT IN ("Venezuelan authors","Venezuelan literature")
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Vietnam%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Vietnam'
+WHERE (geoname LIKE '%Vietnam%'and (geoname NOT IN ("Vietnamese",
+"National characteristics, Vietnamese, in literature.","Vietnam Veterans Memorial (Washington, D.C.)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%war%"
+AND geoname NOT LIKE "%motion pictures%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Vanuatu%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Vanuatu'
+WHERE (geoname LIKE '%Vanuatu%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%British Virgin Islands%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'British Virgin Islands'
+WHERE (geoname LIKE '%British Virgin Islands%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Virgin Islands%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'U.S. Virgin Islands'
+WHERE (geoname LIKE '%Virgin Islands%'and 
+geoname LIKE "%UNITED STATES%"
+AND geoname NOT LIKE "% and %");
+
+UPDATE sixfiveone
+SET country = 'U.S. Virgin Islands'
+WHERE (geoname = 'Salt River Bay National Historical Park and Ecological Preserve (United States Virgin Islands)');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Grenadines%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Saint Vincent and the Grenadines'
+WHERE (geoname LIKE '%Saint Vincent and the Grenadines%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Qatar%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Qatar'
+WHERE (geoname LIKE '%Qatar%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Oman%'
+AND geoname NOT LIKE '%ROMAN%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Oman'
+WHERE (geoname LIKE '%Oman%'
+AND geoname NOT LIKE '%ROMAN%'
+and (geoname NOT IN ("Comanche National Grassland (Colo.)",
+"Holloman Air Force Base (N.M.)","Man woman relationships","Mattawoman Creek (Md.)",
+"Oman, Gulf of.")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%ITALY%"
+AND geoname NOT LIKE "%OTTOMAN%"
+AND geoname NOT LIKE "%IRAN%"
+AND geoname NOT LIKE "%PAKISTAN%"
+AND geoname NOT LIKE "%JAPAN%"
+AND geoname NOT LIKE "%INDIA%"
+));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Jamaica%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Jamaica'
+WHERE (geoname LIKE '%Jamaica%'and (geoname NOT IN ("Jamaica (Washington, D.C.)","Jamaica Plain (Boston, Mass.)","Jamaica Plain, Mass","Structural linguistics.Jamaica")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%N.Y.%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Jordan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Jordan'
+WHERE (geoname LIKE '%Jordan%'and (geoname NOT IN ("Alien labor, Jordanian",
+"B. Everett Jordan Lake (N.C.)","Cisjordanie","East Jordan (Mich.)","Jordanie.",
+"Jordanien","Jordans (Buckinghamshire)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Israel%"
+AND geoname NOT LIKE "%Jordan River%"
+AND geoname NOT LIKE "%Jordan Valley%"
+AND geoname NOT LIKE "%ont.%"
+AND geoname NOT LIKE "%battle%"
+AND geoname NOT LIKE "%Transjordan%"
+AND geoname NOT LIKE "%fjordan%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Japan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Japan'
+WHERE (geoname LIKE '%(Japan)%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Japan%'
+AND country is NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Japan'
+WHERE (geoname LIKE '%Japan%'and (geoname NOT IN ("Europeans in Japan",
+"Japan Civilization","Japanisch.","Japantown (San Francisco, Calif.)","Kanto Earthquake, Japan, 1923.","Pajapan (Mexico)","Tate Mountain, Japan (in religion, folklore, etc.)","Tokyo, Japan--Foreign relations--Hong Kong, China.",
+"United States Naval Expedition to Japan, 1852-1854.")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%japanese%"
+AND geoname NOT LIKE "%battle%"
+AND geoname NOT LIKE "%occupation%"
+AND geoname NOT LIKE "%conflict%"
+AND geoname NOT LIKE "%Sea%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Kenya%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Kenya'
+WHERE (geoname LIKE '%Kenya%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Cambodia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Cambodia'
+WHERE (geoname LIKE '%Cambodia%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Kiribati%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Kiribati'
+WHERE (geoname LIKE '%Kiribati%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Comoros%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Comoros'
+WHERE (geoname LIKE '%Comoros%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Kuwait%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Kuwait'
+WHERE (geoname LIKE '%Kuwait%'and (geoname NOT IN ("Iraq-Kuwait crisis, 1990-1991.")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Kazakhstan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Kazakhstan'
+WHERE (geoname LIKE '%Kazakhstan%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Kyrgyzstan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Kyrgyzstan'
+WHERE (geoname LIKE '%Kyrgyzstan%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Laos%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Laos'
+WHERE (geoname LIKE '%Laos%'and (geoname NOT IN ("Laos Site (Italy)","Laos (Tai people)")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Lebanon%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Lebanon'
+WHERE (geoname LIKE '%Lebanon%'and (geoname NOT IN ("Lebanon (N.H.)",
+"Heidelberg (Lebanon County, Pa. : Township)","Lebanon (Conn.)","Lebanon (Ky.)",
+"Lebanon (New London County, Conn.)","Lebanon (Or.)","Lebanon (Pa.)","Lebanon (Warren County, Ohio)",
+"Lebanon County (Pa.)","Lebanon Springs (N.Y.)","Lebanon, Conn.","Lebanon, N.Y.",
+"Mount Lebanon (N.Y.)","Mount Lebanon (Pa.)","Myerstown (Lebanon County, Pa.)","New Lebanon (N.Y.)",
+"West Lebanon (Lebanon, N.H.)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%war%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Liechtenstein%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Liechtenstein'
+WHERE (geoname LIKE '%Liechtenstein%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Liberia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Liberia'
+WHERE (geoname LIKE '%Liberia%'and (geoname NOT IN ("Liberia (S.C.)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Mayland%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Lesotho%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Lesotho'
+WHERE (geoname LIKE '%Lesotho%'and (geoname NOT IN ("Lesotho theology")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Lithuania%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Lithuania'
+WHERE (geoname LIKE '%Lithuania%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%Russia%"
+AND geoname NOT LIKE "%S.S.R%"
+AND geoname NOT LIKE "%lithuanian%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Luxembourg%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Luxembourg'
+WHERE (geoname LIKE '%Luxembourg%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in art%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Latvia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Latvia'
+WHERE (geoname LIKE '%Latvia%'and (geoname NOT IN ("Latvians")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Libya%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Libya'
+WHERE (geoname LIKE '%Libya%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Libyan Desert%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Morocco%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Morocco'
+WHERE (geoname LIKE '%Morocco%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Monaco%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Monaco'
+WHERE (geoname LIKE '%Monaco%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Moldova%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Moldova'
+WHERE (geoname LIKE '%Moldova%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Dniester%"
+AND geoname NOT LIKE "%Romania%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Montenegro%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Montenegro'
+WHERE (geoname LIKE '%Montenegro%' and (geoname NOT IN('Montenegro (Lima, Peru)','Montenegro (Yugoslavia)'))
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Extinct%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Madagascar%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Madagascar'
+WHERE (geoname LIKE '%Madagascar%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Martinique%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Martinique'
+WHERE (geoname LIKE '%Martinique%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Uruguay%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Uruguay'
+WHERE (geoname LIKE '%Uruguay%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Uruguay River%"
+AND geoname NOT LIKE "%literature%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Uzbekistan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Uzbekistan'
+WHERE (geoname LIKE '%Uzbekistan%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Extinct%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Tajikistan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Tajikistan'
+WHERE (geoname LIKE '%Tajikistan%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Tokelau%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Tokelau'
+WHERE (geoname LIKE '%Tokelau%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Sri Lanka%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Sri Lanka'
+WHERE (geoname LIKE '%Sri Lanka%'and (geoname NOT IN ("Jetavana Stupa and Monastery Site (Anuradhapura, Sri Lanka)")));
+
+UPDATE sixfiveone
+SET country = 'Sri Lanka'
+WHERE (geoname = "Jetavana Stupa and Monastery Site (Anuradhapura, Sri Lanka)");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Marshall Islands%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Marshall Islands'
+WHERE (geoname LIKE '%Marshall Islands%'and (geoname NOT IN ("Marshall Islands.")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Saint Lucia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Saint Lucia'
+WHERE (geoname LIKE '%Saint Lucia%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Macau%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Macau'
+WHERE (geoname LIKE '%Macau%'and (geoname NOT IN ("Macaulay (Ont. : Township)")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Mauritania%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Mauritania'
+WHERE (geoname LIKE '%Mauritania%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Montserrat%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Montserrat'
+WHERE (geoname LIKE '%Montserrat%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Malta%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Malta'
+WHERE (geoname LIKE '%Malta%'and (geoname NOT IN ("Malta (Ohio)")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Mauritius%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Mauritius'
+WHERE (geoname LIKE '%Mauritius%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Maldives%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Maldives'
+WHERE (geoname LIKE '%Maldives%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Malawi%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Malawi'
+WHERE (geoname LIKE '%Malawi%'and (geoname NOT IN ("Malawi.")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%North Korea%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'North Korea'
+WHERE (geoname LIKE '%North Korea%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%South Korea%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'South Korea'
+WHERE (geoname LIKE '%South Korea%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Cayman%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Cayman Islands'
+WHERE (geoname LIKE '%Cayman Islands%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Macedonia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Macedonia [FYROM]'
+WHERE (geoname LIKE '%Macedonia%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Ancient%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%Macedonian%");
+
+UPDATE sixfiveone
+SET country = 'Macedonia [FYROM]'
+WHERE (geoname IN
+("Mala Reka Valley, Macedonia (Debar and Gostivar communes)",
+"Ohrid Lake Region (Macedonian Republic)"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Malaysia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Malaysia'
+WHERE (geoname LIKE '%Malaysia%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Mongolia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Mongolia'
+WHERE (geoname LIKE '%Mongolia%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Namibia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Namibia'
+WHERE (geoname LIKE '%Namibia%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Mozambique%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Mozambique'
+WHERE (geoname LIKE '%Mozambique%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Nigeria%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Nigeria'
+WHERE (geoname LIKE '%Nigeria%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Nigerian%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Niger%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Niger'
+WHERE (geoname LIKE '%Niger%'
+AND country IS NULL
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Niger River%"
+AND geoname NOT LIKE "%Niger Valley%"
+AND geoname NOT LIKE "%Nigerian%"
+AND geoname NOT LIKE "%Germany%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Nicaragua%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Nicaragua'
+WHERE (geoname LIKE '%Nicaragua%'and (geoname NOT IN ("Nicaragua.")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Norway%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Norway'
+WHERE (geoname LIKE '%Norway%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT IN ("Norway Point (Ont.)","Norway House (Man.)","Norway (Me.)"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%New Caledonia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'New Caledonia'
+WHERE (geoname LIKE '%New Caledonia%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Nepal%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Nepal'
+WHERE (geoname LIKE '%Nepal%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%NEPALI%"
+AND geoname NOT LIKE "%Nepalese");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Nauru%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Nauru'
+WHERE (geoname LIKE '%Nauru%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Norfolk Island%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Norfolk Island'
+WHERE (geoname LIKE '%Norfolk Island%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Mariana Islands%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Northern Mariana Islands'
+WHERE (geoname LIKE '%Northern Mariana Islands%'
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Netherlands%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Netherlands'
+WHERE (geoname LIKE '%Netherlands%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%Netherlands Antilles%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Panama%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Panama'
+WHERE (geoname LIKE '%Panama%'and (geoname NOT IN ("Panama Railroad","Panama canal.","Panama, Canal de.","Panamakanal")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%(Fla.)%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Philippines%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Philippines'
+WHERE (geoname LIKE '%Philippines%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%battle%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Pakistan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Pakistan'
+WHERE (geoname LIKE '%Pakistan%'and (geoname NOT IN ("Pakistan movement","Pakistani Americans")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%India-Pakistan%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Peru%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Peru'
+WHERE (geoname LIKE '%(Peru)%');
+
+SELECT DISTINCT geoname FROM sixfiveone 
+WHERE geoname LIKE '%Peru%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Peru'
+WHERE (geoname LIKE '%Peru%'and (geoname NOT IN ("Peru (Ind.)",
+"Peru Current","Peru (Viceroyalty)","Peru (Neb.)","Perugia")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%poetry%"
+AND geoname NOT LIKE "%Peru-Bolivian%"
+AND geoname NOT LIKE "%Cyperus%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%New Zealand%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'New Zealand'
+WHERE (geoname LIKE '%New Zealand%'and (geoname NOT IN ("Maori (New Zealand people).",
+"New Zealand poetry.","New Zealand fiction")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Poland%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Poland'
+WHERE (geoname LIKE '%(Poland)%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Poland%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Poland'
+WHERE (geoname LIKE '%Poland%'and (geoname NOT IN ("Poland Foreign economic relations")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%IN LITERATURE%"
+AND geoname NOT LIKE "%IN art%"
+AND geoname NOT LIKE "%Ohio%"
+AND geoname NOT LIKE "%battle%"
+AND geoname NOT LIKE "%(Me.)%"
+AND geoname NOT LIKE "%territory under German occupation%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Puerto Rico%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Puerto Rico'
+WHERE (geoname LIKE '%Puerto Rico%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Pitcairn%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Pitcairn Islands'
+WHERE (geoname LIKE '%Pitcairn Island%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Portugal%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Portugal'
+WHERE (geoname LIKE '%Portugal%'and (geoname NOT IN ("Lisbon Earthquake, Portugal,1755",
+"Portugal Cove (Nfld.)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Palau%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Palau'
+WHERE (geoname LIKE '%Palau%'and (geoname NOT IN ('Palauig Bay (Philippines)')));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Paraguay%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Paraguay'
+WHERE (geoname LIKE '%Paraguay%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Paraguay River%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Réunion%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Réunion'
+WHERE (geoname LIKE '%Réunion%'and (geoname NOT IN ("Réunion (Texas)",
+"Réunion newspapers.")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Romania%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Romania'
+WHERE (geoname LIKE '%Romania%'and (geoname NOT IN ("Romanian literature")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Extinct%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Serbia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Serbia'
+WHERE (geoname LIKE '%Serbia%'and (geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%battle%"
+AND geoname NOT LIKE "%literature%"
+AND geoname NOT LIKE "%Serbian%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Rwanda%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Rwanda'
+WHERE (geoname LIKE '%Rwanda%'and (geoname NOT IN ("Rwandans")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Saudi Arabia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Saudi Arabia'
+WHERE (geoname LIKE '%Saudi Arabia%'and (geoname NOT IN ("Saudi Arabian periodicals")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%battle%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%in Islam%"
+AND geoname NOT LIKE "%in the Hadith%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Seychelles%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Seychelles'
+WHERE (geoname LIKE '%Seychelles%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Solomon Islands%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Solomon Islands'
+WHERE (geoname LIKE '%Solomon Islands%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Sweden%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Sweden'
+WHERE (geoname LIKE '%Sweden%'and (geoname NOT IN ("Russia. Treaties, etc. Sweden, 1721 August 30.",
+"Sweden (N.Y. : Town)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%NEW SWEDEN%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Singapore%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Singapore'
+WHERE (geoname LIKE '%Singapore%'and (geoname NOT IN ("Singapore drama (English)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Singapore Strait%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Slovenia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Slovenia'
+WHERE (geoname LIKE '%Slovenia%' AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Sudan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Sudan'
+WHERE (geoname LIKE '%Sudan%'and (geoname NOT IN ("Sudan, French")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%South Sudan%"
+AND geoname NOT LIKE "%in poetry%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Sierra Leone%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Sierra Leone'
+WHERE (geoname LIKE '%Sierra Leone%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Senegal%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Senegal'
+WHERE (geoname LIKE '%Senegal%'and (geoname NOT IN ("Art, Senegalese.",
+"Atlantic Coast (Senegal)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "Senegal River"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Somalia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Somalia'
+WHERE (geoname LIKE '%Somalia%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Suriname%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Suriname'
+WHERE (geoname LIKE '%Suriname%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%El Salvador%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'El Salvador'
+WHERE (geoname LIKE '%El Salvador%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%San Marino%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'San Marino'
+WHERE (geoname LIKE '%San Marino%'AND geoname NOT LIKE "%Italy%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Saint Helena%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Saint Helena'
+WHERE (geoname LIKE '%Saint Helena%'and 
+(geoname NOT LIKE "%(CALIF.)%"
+AND geoname NOT LIKE "%(S.C.)%"
+AND geoname NOT LIKE "%(Mich.)%"
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%São Tomé and Príncipe%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'São Tomé and Príncipe'
+WHERE (geoname LIKE '%São Tomé and Príncipe%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Syria%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Syria'
+WHERE (geoname LIKE '%Syria%'and (geoname NOT IN ("Jebel Mūsa (Syria), Defense of, 1915")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Assyria%"
+AND geoname NOT LIKE "%Extinct%"
+AND geoname NOT LIKE "%occupation%"
+AND geoname NOT LIKE "%battle%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Swaziland%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Swaziland'
+WHERE (geoname LIKE '%Swaziland%'AND geoname NOT LIKE "% and %");
+
+UPDATE sixfiveone 
+SET country = "Eswatini"
+WHERE geoname = "Eswatini";
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Turks and Caicos%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Turks and Caicos Islands'
+WHERE (geoname LIKE '%Turks and Caicos%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Chad%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Chad'
+WHERE (geoname IN ("Tschad.","Tschad","Tchad.","Tchad","Ouaddai, Chad","Kanem region, Chad","Chad.","Chad")
+OR geoname LIKE "%(Chad)%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Togo%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Togo'
+WHERE (geoname LIKE '%Togo%'and (geoname NOT LIKE "%Russia%"
+AND geoname NOT LIKE "%Togoland%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Russia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Russia'
+WHERE (geoname LIKE '%(Russia)%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Russia%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Russia'
+WHERE (geoname LIKE '%Russia%'and (geoname NOT LIKE ("%prussia%")
+AND geoname NOT LIKE "%Byelorussian%"
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%POETRY%"
+AND geoname NOT LIKE "%literature%"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%occupation%"
+AND geoname NOT LIKE "%Russian%"
+AND geoname NOT LIKE "%massacre%"
+AND geoname NOT LIKE "%battle%"
+AND geoname NOT LIKE "%EXTINCT%"
+AND geoname NOT LIKE "%Pinsk%"
+AND geoname not like "%White russia%"
+AND geoname NOT IN ("Russia (Territory under White armies, 1918-1920)","Russia. Treaties, etc. Sweden, 1721 August 30.")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Thailand%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Thailand'
+WHERE (geoname LIKE '%Thailand%'and (geoname NOT IN ("Gulf of Thailand.","Thailand, Gulf of")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Turkmenistan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Turkmenistan'
+WHERE (geoname LIKE '%Turkmenistan%'and (geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Tunisia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Tunisia'
+WHERE (geoname LIKE '%Tunisia%'and (geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%occupation%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Tonga%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Tonga'
+WHERE (geoname LIKE '%Tonga%'and (geoname NOT IN ("Rarotonga (Cook Islands)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Tongaat (South Africa)%"
+AND geoname NOT LIKE "%(N.Z.)%"
+AND geoname NOT LIKE "%New Zealand%"
+AND geoname NOT LIKE "%Alaska%"
+AND geoname NOT LIKE "%Neb.%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Turkey%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Turkey'
+WHERE (geoname LIKE '%(Turkey)%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Turkey%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Turkey'
+WHERE (geoname LIKE '%Turkey%'and (geoname NOT IN ("Three Turkey Ruins, Ariz.",
+"Turkey Lakes Watershed (Ont.).","Turkey Creek Pueblo (Ariz.)")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Extinct%"));
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%TOBAGO%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Trinidad and Tobago'
+WHERE (geoname LIKE '%Trinidad and Tobago%');
+
+UPDATE sixfiveone
+SET country = 'Trinidad and Tobago' 
+WHERE geoname IN ("Plymouth (Tobago)","Toco (Trinidad)","San Fernando (Trinidad)");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Tuvalu%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Tuvalu'
+WHERE (geoname LIKE '%Tuvalu%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Taiwan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Taiwan'
+WHERE (geoname LIKE '%Taiwan%'and (geoname NOT IN ("Investments, Taiwanese",
+"National characteristics, Taiwan.","National characteristics, Taiwan.")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Taiwan Strait%"
+AND geoname NOT LIKE "%aborigines%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Tanzania%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Tanzania'
+WHERE (geoname LIKE '%Tanzania%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Ukraine%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Ukraine'
+WHERE (geoname LIKE '%(Ukraine)%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Ukraine%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Ukraine'
+WHERE (geoname LIKE '%Ukraine%'and
+(country IS NULL 
+AND geoname NOT IN ("Ukraine.")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%BATTLE%"
+AND geoname NOT LIKE "%MASSACRE%"
+AND geoname NOT LIKE "%Extinct%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Uganda%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Uganda'
+WHERE (geoname LIKE '%Uganda%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Timor%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Timor-Leste'
+WHERE (geoname LIKE '%Timor-Leste%');
+
+UPDATE sixfiveone
+SET country = 'Timor-Leste'
+WHERE (geoname LIKE '%East Timor%'
+or geoname LIKE "%Timor-Lest%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Mayotte%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Mayotte'
+WHERE (geoname LIKE '%Mayotte%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Niue%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Niue'
+WHERE (geoname LIKE '%Niue%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Jan Mayen%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Svalbard and Jan Mayen'
+WHERE (geoname LIKE '%Jan Mayen%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Svalbard%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Svalbard and Jan Mayen'
+WHERE (geoname LIKE '%Svalbard%'
+AND country IS NULL);
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Saint Pierre and Miquelon%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Saint Pierre and Miquelon'
+WHERE (geoname LIKE '%Saint Pierre and Miquelon%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Miquelon%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Saint Pierre and Miquelon'
+WHERE (geoname LIKE '%Miquelon%'
+AND geoname NOT LIKE "%(Alta.)%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%French Polynesia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'French Polynesia'
+WHERE (geoname LIKE '%French Polynesia%'and (geoname NOT LIKE "%in art%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%BURMA%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Myanmar [Burma]'
+WHERE (geoname LIKE '%Burma%'and (geoname NOT IN ("Burmarsh (England)")
+AND geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%United States%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'United States'
+WHERE (geoname LIKE '%United States%'and (geoname NOT IN ("Ryukyu Islands (United States Civil Administration, 1950-1972)","Slavery in the United States","Spanish missions of the United States.","Trappists in the United States","Territory of the United States, South of the River Ohio.","United States Army.","United States History Revolution, 1775-1783.","United States Naval Expedition to Japan, 1852-1854.","United States and government","United States relations","United States social")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Virgin Islands%"
+AND geoname NOT LIKE "%in art%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%USA%'
+ORDER BY geoname;
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%USA%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'United States'
+WHERE (geoname IN ("USA", "USA.","Ithaca (U.S.A.)"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Jersey%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Jersey'
+WHERE (geoname LIKE "%Jersey (Channel Islands)%"
+OR geoname LIKE "%Jersey (England)%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Mali%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Mali'
+WHERE geoname LIKE '%Mali%' AND country IS NULL
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Capiz%"
+AND geoname NOT LIKE "%(V.I.)%"
+AND geoname NOT LIKE "%Ehemalige%"
+AND geoname NOT LIKE "%Gravity%"
+AND geoname NOT LIKE "%Russia%"
+AND geoname NOT LIKE "%(Alta.)%"
+AND geoname NOT LIKE "%Quebec%"
+AND geoname NOT LIKE "%Québec%"
+AND geoname NOT LIKE "%Malibu%"
+AND geoname NOT LIKE "%Somalie%"
+AND geoname NOT LIKE "%Somaliland%"
+AND geoname NOT LIKE "%Somali%";
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Saint Kitts%'
+ORDER BY geoname;
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Nevis%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Saint Kitts and Nevis'
+WHERE (geoname LIKE '%Nevis%'OR
+geoname LIKE '%Saint Kitts%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Albania%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Albania'
+WHERE (geoname LIKE '%Albania%' AND 
+geoname NOT IN ("Albania (Ancient kingdom)")
+AND geoname NOT LIKE "%Albanian%"
+AND geoname NOT LIKE "%Extinct%"
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Anguilla%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Anguilla'
+WHERE (geoname LIKE '%Anguilla%'
+AND geoname NOT LIKE "%italy%"
+AND geoname NOT LIKE "%peru%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Armenia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Armenia'
+WHERE (geoname LIKE '%Armenia%'
+AND geoname NOT LIKE "%S.S.R%"
+AND geoname NOT LIKE "%massacre%"
+AND geoname NOT LIKE "%Armenian%"
+AND geoname NOT LIKE "%poetry%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Netherlands Antilles%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Netherlands Antilles'
+WHERE (geoname LIKE '%Netherlands Antilles%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Angola%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Angola'
+WHERE (geoname LIKE '%Angola%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT IN ("Angola (Revolutionary government in exile, 1962-1975)","Angola (N.Y.)","Angola (Ind.)"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%AMERICAN Samoa%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'American Samoa'
+WHERE (geoname LIKE '%American Samoa%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Aruba%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Aruba'
+WHERE (geoname LIKE '%Aruba%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Azerbai%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Azerbaijan'
+WHERE (geoname LIKE '%Azerbai%'
+AND geoname NOT LIKE "%iran%"
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%S.S.R%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Bahrain%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Bahrain'
+WHERE (geoname LIKE '%Bahrain%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Burundi%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Burundi'
+WHERE (geoname LIKE '%Burundi%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Brunei%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Brunei'
+WHERE (geoname LIKE '%Brunei%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Bahamas%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Bahamas'
+WHERE (geoname LIKE '%Bahamas%');
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Bhutan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Bhutan'
+WHERE (geoname LIKE '%Bhutan%'
+AND geoname NOT IN ("Chomo Lhari (Bhutan and China)","Bhutan in mass media."));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Cocos%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Cocos [Keeling] Islands'
+WHERE (geoname LIKE '%Cocos (Keeling) Islands%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Cape V%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Cape Verde'
+WHERE (geoname LIKE '%Cape VERDE%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Djibou%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Djibouti'
+WHERE (geoname LIKE '%Djibouti%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Dominica%'
+AND geoname NOT LIKE "%dominican%"
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Dominica'
+WHERE (geoname LIKE '%Dominica%'
+AND geoname NOT LIKE "%dominican%"
+AND geoname NOT LIKE "%République dominicaine%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Eritrea%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Eritrea'
+WHERE (geoname LIKE '%Eritrea%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Falkland island%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Falkland Islands [Islas Malvinas]'
+WHERE (geoname LIKE '%Falkland island%'
+AND geoname NOT LIKE "%war%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Faroe%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Faroe Islands'
+WHERE (geoname LIKE '%Faroe Islands%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Grenada%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Grenada'
+WHERE (geoname LIKE '%Grenada%'
+AND geoname NOT IN ("Grenada (Miss.)","Grenadines (Saint Vincent and the Grenadines and Grenada)"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Gibraltar%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Gibraltar'
+WHERE (geoname IN ('Gibraltar','Gibraltar.',
+"Vanguard Cave Site (Gibraltar)","Gorham's Cave Site (Gibraltar)"));
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Gambia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Gambia'
+WHERE (geoname LIKE '%Gambia%'
+AND geoname NOT LIKE "%Senegambia%"
+AND geoname NOT LIKE "%Gambia River%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Georgia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Georgia'
+WHERE (geoname LIKE '%Georgia%'
+AND geoname NOT LIKE "%S.S.R.%"
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in poetry%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%Georgian%"
+AND geoname NOT LIKE "%B.C.%"
+AND geoname NOT LIKE "%Solomon Islands%"
+AND geoname NOT LIKE "%Ont.%"
+AND geoname NOT LIKE "%Ga.%"
+AND geoname NOT LIKE "%South Georgia and the South Sandwich Islands%");
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Slovakia%'
+AND geoname NOT LIKE "%Czechoslovakia%"
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Slovakia'
+WHERE (geoname LIKE '%Slovakia%'and (geoname NOT IN ("Slovakia.")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%Czechoslovakia%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Andorra%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Andorra'
+WHERE (geoname LIKE '%Andorra%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Czech Republic%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Czech Republic'
+WHERE (geoname LIKE '%Czech Republic%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%Czechoslovakia%"
+AND geoname NOT LIKE "%battle%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Germany%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Germany'
+WHERE (geoname LIKE '%(Germany)%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Germany%'
+AND country IS NULL
+AND geoname NOT LIKE "%West%"
+AND geoname NOT LIKE "%East%"
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Germany'
+WHERE (geoname LIKE '%Germany%'
+AND country IS NULL
+AND geoname NOT LIKE "%West%"
+AND geoname NOT LIKE "%East%"
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%occupation%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%in art%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Congo%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Congo [DRC]'
+WHERE (geoname LIKE '%Bas-Congo%'
+AND geoname LIKE '%Bas-Flueve%'
+AND geoname IN ("Bukavu (Congo)","Bunia (Congo)","Equateur (Congo : Province)",
+"Uélé (Congo)","Sud-Kivu (Congo)","Parc national des Virunga (Congo)","Nyiragongo (Congo)","Nord-Kivu (Congo)","Niemba (Congo)","Maniema (Congo)","Mbanza Mona (Congo)","Mambasa Region (Congo)","Mai-Ndombe (Congo)","Lualaba (Congo : Province)","Kwilu (Congo : Sub-Region)","Kolwezi (Congo)","Kivu (Congo : Region)","Kiva (Congo)","Kisangani (Congo)","Kananga (Kasaï-Occidental, Congo)","Haut-Katanga (Congo)","Goma (Nord-Kivu, Congo)","Idjwi Island (Congo)")
+OR geoname LIKE "%Democratic Republic%"
+OR geoname LIKE "%KINSHASA%"
+OR geoname LIKE "%Leopoldville%"
+OR geoname LIKE "%Lubumbashi%"
+OR geoname LIKE "%Ituri%"
+OR geoname LIKE "%Kasai%"
+OR geoname LIKE "%Kasaï%" 
+OR geoname LIKE "%orientale%" 
+OR geoname LIKE "%Katang%" 
+OR geoname LIKE "%Republic Democratic%"
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%occupation%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%in art%");
+
+UPDATE sixfiveone
+SET country = 'Congo [Republic]'
+WHERE (geoname IN ("Boma (Bas-Fleuve, Congo)","Boutazab (Congo)",
+"Sangha (Congo : Region)","Sanga Site (Congo)","Nkayi (Congo)","Niari (Congo : Region)","Lékoumou (Congo)","Dolisie (Congo)")
+OR geoname LIKE "%Democratic Republic of Congo%"
+OR geoname LIKE "%brazzaville%" 
+OR geoname LIKE "%Likouala%"
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Kouilou%"
+AND geoname NOT LIKE "%occupation%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%in art%");
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Mexico%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Mexico'
+WHERE (geoname LIKE '%(Mexico)%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Mexico%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Mexico'
+WHERE (geoname LIKE '%Mexico%'
+AND geoname NOT LIKE "%massacre%"
+AND geoname NOT LIKE "%New Mexico%"
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Gulf%"
+AND geoname NOT LIKE "%Colo.%"
+AND geoname NOT LIKE "%(Mo.)%"
+AND geoname NOT LIKE "%(N.Y.)%"
+AND geoname NOT LIKE "%(Fla.)%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%History--Spanish colony, 1540-1810%");
+
+SELECT distinct geoname FROM sixfiveone WHERE geoname LIKE '%argentina%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Argentina'
+WHERE (geoname LIKE '%argentina%' 
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Brazil%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Croatia%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Croatia'
+WHERE (geoname LIKE '%Croatia%'and (geoname NOT IN ("Croatia.")
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Ancient%"
+AND geoname NOT LIKE "%literature%"
+AND geoname NOT LIKE "%Croatian%"
+AND geoname NOT LIKE "%Yugoslavia%"
+AND geoname NOT LIKE "%-Slavonia%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Spain%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Spain'
+WHERE (geoname LIKE '%(Spain)%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Spain%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Spain'
+WHERE (geoname LIKE '%Spain%'
+and (geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%Attack%"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%in exile%"
+AND geoname NOT LIKE "%history%"
+AND geoname NOT LIKE "%Spainmala%"
+AND geoname NOT LIKE "%battle%"
+AND geoname NOT LIKE "%Extinct%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%China%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'China'
+WHERE (geoname LIKE "%(China)%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%China%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'China'
+WHERE (geoname LIKE "%, China)%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%China%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'China'
+WHERE (geoname LIKE "%China%"
+AND geoname NOT LIKE "%Chinatown%"
+AND geoname NOT LIKE "%Indo-China%"
+AND geoname NOT LIKE "%Indochina%"
+AND geoname NOT LIKE "%National gov%"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%and%"
+AND geoname NOT LIKE "%government%"
+AND geoname NOT LIKE "%soviet%"
+AND geoname NOT LIKE "%former%"
+AND geoname NOT LIKE "%history%"
+AND geoname NOT LIKE "%china sea%"
+AND geoname NOT LIKE "%economic%"
+AND geoname NOT LIKE "%motion pictures%"
+AND geoname NOT LIKE "%foreign relations%"
+AND geoname NOT LIKE "%fiction%"
+AND geoname NOT LIKE "%investiments%"
+AND geoname NOT LIKE "%consultants%");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Equatorial Guinea%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Equatorial Guinea'
+WHERE (geoname LIKE '%Equatorial Guinea%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Papua New Guinea%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Papua New Guinea'
+WHERE (geoname LIKE '%Papua New Guinea%'
+AND geoname NOT LIKE "%literature%"
+AND geoname NOT LIKE "%region%"
+AND geoname NOT LIKE "% and %");
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Guinea%'
+AND country IS NULL
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Guinea'
+WHERE (geoname LIKE '%Guinea%'
+AND country IS NULL)
+AND geoname NOT LIKE "%Spanish%"
+AND geoname NOT LIKE "%Dutch%"
+AND geoname NOT LIKE "%Gulf%"
+AND geoname NOT LIKE "%New Guinea%"
+AND geoname NOT LIKE "%Papua%"
+AND geoname NOT LIKE "% and %";
+
+UPDATE sixfiveone
+SET country = 'Guinea-Bissau'
+WHERE (geoname = 'Guinea Bissau');
+
+UPDATE sixfiveone
+SET country = 'Papua New Guinea'
+WHERE (geoname = 'Bougainville Island Region (Papua New Guinea)');
+
+
+
+
+
+############WHAT TO DO WITH THE REMAINDER?
+
+SELECT * from sixfiveone
+WHERE geoname LIKE "% and %"
+AND country IS NULL;
+
+UPDATE sixfiveone
+SET country = 'Multiple_Countries'
+WHERE geoname LIKE "% and %"
+AND country IS NULL;
+
+SELECT * from sixfiveone
+WHERE geoname LIKE "%U.S.S.R%"
+OR geoname LIKE "%Czechoslovakia%"
+OR geoname LIKE "%Extinct%"
+OR geoname LIKE "%Ancient%"
+AND country IS NULL;
+
+UPDATE sixfiveone
+SET country = 'Historical_Place'
+WHERE geoname LIKE "%U.S.S.R%"
+OR geoname LIKE "%Czechoslovakia%"
+OR geoname LIKE "%Extinct%"
+OR geoname LIKE "%Ancient%"
+OR (geoname LIKE '%Germany%'
+AND country IS NULL
+AND (geoname LIKE "%West%"
+OR geoname LIKE "%East%"))
+AND country IS NULL;
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Palestine%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Palestine, State of'
+WHERE (geoname LIKE '%Palestine%'
+AND geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "Palestine in %"
+AND geoname NOT IN ("Palestine (Tex.)"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Sao Tome%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Sao Tome and Principe'
+WHERE (geoname LIKE '%Sao Tome and Principe%');
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%South Sudan%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'South Sudan'
+WHERE (geoname LIKE '%South Sudan%'and (geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Maarten%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'Sint Maarten (Dutch part)'
+WHERE (geoname LIKE '%Maarten%'and (geoname NOT LIKE "% and %"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Northern Ireland%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'United Kingdom of Great Britain and Northern Ireland'
+WHERE (geoname LIKE '%Northern Ireland%'and (geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Great Britain%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'United Kingdom of Great Britain and Northern Ireland'
+WHERE (geoname LIKE '%Great Britain%'and (geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%Hong Kong%"
+AND geoname NOT LIKE "%foreign relations%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT IN ("Protestants in Great Britain.","Great Britain Royal Navy","Jews, Russian, in Great Britain","Great Britain History Edward V","Great Britain Miscellaneous Island Dependencies")));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Wales%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'United Kingdom of Great Britain and Northern Ireland'
+WHERE (geoname LIKE '%Wales%'and (geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%New South Wales%"
+AND geoname NOT LIKE "%Prince of Wale%"
+AND geoname NOT LIKE "%Alaska%"
+AND geoname NOT LIKE "%(Mass.%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%England%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'United Kingdom of Great Britain and Northern Ireland'
+WHERE (geoname LIKE '%(England)%');
+
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%England%'
+and country is null
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'United Kingdom of Great Britain and Northern Ireland'
+WHERE (geoname LIKE '%England%'and (geoname NOT LIKE "% and %"
+and geoname not like "%church of england%"
+and geoname not like "%battle%"
+and geoname not like "%neuengland%"
+and geoname not like "%New England%"));
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Scotland%'
+ORDER BY geoname;
+
+UPDATE sixfiveone
+SET country = 'United Kingdom of Great Britain and Northern Ireland'
+WHERE (geoname LIKE '%Scotland%'and (geoname NOT LIKE "% and %"
+AND geoname NOT LIKE "%MASSACRE%"
+AND geoname NOT LIKE "%in art%"
+AND geoname NOT LIKE "%in literature%"
+AND geoname NOT LIKE "%parliament%"
+AND geoname NOT LIKE "%borders%"
+AND geoname NOT LIKE "%(Ont.)%"
+AND geoname NOT LIKE "%(Mo.)%"
+AND geoname NOT LIKE "%(N.C.)%"
+AND geoname NOT LIKE "%(N.Y.)%"));
+
+SELECT * FROM sixfiveone 
+WHERE geoname LIKE "%saint barth%";
+
+UPDATE sixfiveone 
+SET country = "Saint Barthélemy"
+WHERE geoname LIKE "%saint barth%";
+
+SELECT * FROM sixfiveone 
+WHERE geoname LIKE "%saint martin%";
+
+UPDATE sixfiveone 
+SET country = "Saint Martin (French part)"
+WHERE geoname LIKE "%saint martin%"
+AND geoname NOT LIKE "%England%"
+AND geoname NOT LIKE "%bangladesh%";
+
+SELECT * FROM sixfiveone
+WHERE geoname  "Saba%";
+
+UPDATE sixfiveone 
+SET country = "Bonaire, Sint Eustatius and Saba"
+WHERE geoname LIKE "%Bonaire%";
+
+UPDATE sixfiveone 
+SET country = "Bonaire, Sint Eustatius and Saba"
+WHERE geoname LIKE "%Eustatius%";
+
+UPDATE sixfiveone 
+SET country = "Bonaire, Sint Eustatius and Saba"
+WHERE geoname = "Saba."
+or geoname = "Saba";
+
+SELECT * FROM sixfiveone
+WHERE geoname LIKE "%Tristan da Cunha%";
+
+UPDATE sixfiveone 
+SET country = "Saint Helena, Ascension and Tristan da Cunha"
+WHERE country = "Saint Helena";
+
+UPDATE sixfiveone 
+SET country = "Saint Helena, Ascension and Tristan da Cunha"
+WHERE country = "Ascension";
+
+UPDATE sixfiveone 
+SET country = "Saint Helena, Ascension and Tristan da Cunha"
+WHERE geoname LIKE "%Tristan da Cunha%";
+
+
+######STILL TO DO
+
+Korea
+	##everything classified as KOREA 
+	Korea (North)
+	Korea (South)
+
+Western Sahara --- disputed territory Morroco and also Sahrawi Arab Democratic Republic which is known as Western Sahara?
+
+
+
+###NO CHANGE NEEDED:
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%U.S. Minor Outlying Islands%'
+ORDER BY geoname;
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%French Southern Territories%'
+ORDER BY geoname;
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Bouvet Island%'
+ORDER BY geoname;
+
+SELECT DISTINCT geoname FROM sixfiveone WHERE geoname LIKE '%Holy See%'
+ORDER BY geoname;
+
+
