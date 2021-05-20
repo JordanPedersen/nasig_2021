@@ -12,4 +12,5 @@ This project was initiated as a type of collection diversity audit. I wanted to 
 - The extracted data is available here if you want to play around with it (let me know if you find anything interesting!), filename : joined_nohead.txt.zip
 - The SQL queries I used to clean my data is available in this repository, filename : SQL_cleaning_final
 - The cleaned dataset is available here (joined with https://www.kaggle.com/petersorensen360/iso3166countrieswithregionalcodes) filename : NASIG_split.zip
-- The Jupyter notebook is available here, filename : 
+- The Jupyter notebook is available here, filename : NASIG_final.ipynb
+- The Jupyter notebook is also available as a .py file here, filename : NASIG_final.py
